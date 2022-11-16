@@ -1,0 +1,77 @@
+.text {
+  width: 100vw; 
+  height: 100vh; 
+  background-color: grey;
+}
+/* 
+vw : 브라우저 폭에 비례
+vh : 브라우저 높이에 비례
+rem : 기본 폰트 사이즈에 비례
+em : 내 폰트 사이즈에 비례
+*/
+
+/* media query */
+/* 많이 사용하는 단위 : 1200,992,768,576 */
+@media screen and (max-width:1200px){
+
+}
+
+/* .container {
+  padding : 10px;
+  display:flex;
+}
+
+.item {
+  border-radius: 5px;
+  padding : 20px;
+  margin : 5px 10px;
+}
+
+@media screen and (max-width:1200px){
+  .container {
+    display:block
+  }
+  .item {
+    float : left
+  }
+}
+
+@media screen and (max-width:768px){
+  .container {
+    display:flex;
+    flex-direction: column;
+  }
+} */
+
+* {
+  outline : 1px solid green;
+}
+
+.container {
+  padding : 10px;
+  width: 80%;
+  max-width: 1000px;
+  margin : 100px auto auto auto;
+}
+
+.container .item {
+  float:left;
+  width: 25%;
+  text-align: center;
+}
+
+@media screen and (max-width:1200px){
+  .container{
+    max-width: 600px;
+  }
+
+  .container .item {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width:768px){
+  .container .item {
+    width: 100%
+  }
+}

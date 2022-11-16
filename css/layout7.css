@@ -14,9 +14,6 @@
   margin:5px;
 }
 
-/* * {
-  outline : 1px solid red;
-} */
 
 * {
   margin:0;
@@ -51,4 +48,41 @@ a {
 
 .menu span {
   margin-left : 5px;
+}
+
+/* flex 사용하지 않고 navbar 만들기 */
+.navbar2 {
+  background-color: pink;
+  color:white;
+  width: 100%;
+  height: 75px;
+}
+
+.logo2 {
+  float: left;
+  font-size: 26px;
+  font-weight: bold;
+  margin-left : 10px;
+}
+
+.products {
+  float:right;
+  font-size: 18px;
+  margin-right:10px;
+}
+
+.services {
+  float:right;
+  font-size: 18px;
+}
+
+.item {
+  height: 100%;
+}
+
+.item a {
+  display: block;
+  height: 100%;
+  line-height: 75px;
+  padding : 0 10px;
 }
