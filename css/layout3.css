@@ -1,0 +1,97 @@
+* {
+  margin:0px;
+  padding:0px;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.main-background {
+  width: 100%;
+  height: 500px;
+  background-image: url(../img/ocean.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-attachment:fixed; */
+  /* filter:brightness(90%) */
+    /* 테두리 겹침 방지 */
+  padding:1px;
+  position: relative;
+}
+
+.main-title {
+  color: white;
+  font-size: 40px;
+  margin-top : 100px;
+  /*테두리가 겹치면 margin collapse 현상 발생*/
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main-content {
+  color:white;
+  margin : 0 30px 20px 30px;
+  
+}
+
+.visit-btn {
+  width: 80px;
+  height: 30px;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  /* position: relative; */
+  /* 내 위치를 기준으로 이동 */
+  /* 위치 이동 */
+  /* 공중에 뜸 */
+  /* position:static; 좌표이동X */
+  /* position:fixed; 현재 화면이 기준 */
+  position:absolute; 
+  /* 내 부모 중 postion:relative를 가진 태그 기준 */
+  /* bottom:25px;
+  right: 25px; */
+
+  /* 가운데 정렬하는 법 */
+  left:0;
+  right:0;
+  margin:auto;
+}
+
+.grey-box{
+  /* width: 600px; */
+  width: 80%;
+  max-width: 600px;
+  height: 40%;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 20px;
+  position: relative;
+  left:0;
+  right:0;
+  bottom : 50px;
+  margin:auto;
+  /* z-index: 5; */
+  /* box-sizing: border-box; */
+}
+
+.grey-box h4 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.text-input {
+  padding:10px;
+  font-size: 20px;
+  border:2px solid black;
+  border-radius: 5px;
+}
+
+input[type=password] {
+  padding:10px;
+  font-size: 20px;
+  border:2px solid blue;
+  border-radius: 5px;
+}

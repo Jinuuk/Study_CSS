@@ -1,0 +1,87 @@
+/* * {
+  outline: 1px solid green;
+} */
+
+*{
+  margin:0px;
+  padding:0px;
+}
+
+nav {
+  margin-top : 10px;
+  text-align: center;
+}
+
+
+.navbar li {
+  display:inline-block;
+  width: 60px;
+  text-align: center;
+  background-color: #eee;
+  padding : 10px;
+  border-radius: 5px;
+}
+
+.navbar li a {
+  font-size: 16px;
+  text-decoration: none;
+  color:black;
+}
+
+.container {
+  width: 800px;
+  height: 200px;
+  margin-top : 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.left {
+  width: 75%;
+  height: 100%;
+  float : left;
+}
+
+.left .top .profile-image {
+  width: 50px;
+  float:left;
+}
+
+.left .top .profile-info {
+  float:left;
+  margin-left : 5px;
+}
+
+.left .top .profile-info span {
+  display: block;
+}
+
+.left .top .profile-info span:nth-child(1){
+ letter-spacing: -1px;
+}
+
+.left .top .profile-info span:nth-child(2){
+  margin-top : 5px;
+  font-size: 12px;
+  color: grey;
+}
+
+.left .bottom .title {
+  margin : 15px 0;
+  letter-spacing: -1px;
+}
+
+.left .bottom .contents {
+  font-size: 13px;
+  color: grey;
+}
+
+.right {
+  width: 25%;
+  height: 100%;
+  float : left;
+}
+
+.right .product-image {
+  width: 100%
+}

@@ -1,0 +1,35 @@
+.container {
+  width: 800px;
+}
+
+.header {
+  width: 100%; /*부모 태그의 100%*/
+  height: 50px;
+  background: aquamarine;
+  display:block /*한 행을 전부 차지*/
+}
+
+.left-menu {
+  width: 20%;
+  height: 400px;
+  background: cornflowerblue;
+  /* float:left; 요소를 띄워서 왼쪽 정렬 */
+  display:inline-block; /*자기 크기만큼 차지, 박스 사이 공백 제거 필요*/
+  vertical-align: top; /*인라인-블록, 인라인 요소 상하 정렬*/
+  /* baseline 때문에 배치가 이상해짐 */
+}
+
+.right {
+  width: 80%;
+  height: 400px;
+  background: coral;
+  /* float:left; 요소를 띄워서 왼쪽 정렬 */
+  display:inline-block;
+}
+
+.footer{
+  width: 100%;
+  height: 100px;
+  background-color: grey;
+  /* clear:both; float 다음에 오는 요소에게 주면 float로 발생하는 이상한 현상 해결 가능 */
+}

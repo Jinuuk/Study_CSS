@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* outline : 1px solid green; */
+}
+
+
+.container {
+  background-color: #eee;
+  width: 800px;
+  height: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top : 50px;
+  padding : 80px;
+}
+
+.container .title {
+  margin-bottom: 25px;
+}
+
+.table-container {
+  border-radius: 10px;
+  background-color: #fff;
+  padding : 20px;
+  margin-bottom : 20px;
+}
+
+table {
+  border-collapse: collapse;
+  /* background-color: #fff; */
+  width: 100%;
+}
+
+th {
+  padding-bottom: 15px;
+  font-size: 15px;
+}
+
+th, td {
+  font-weight: bold;
+  border-bottom: 1px solid #eee;
+}
+
+.last td {
+  padding-top : 15px;
+  border : none;
+}
+
+.last .total {
+  font-size: 18px;
+}
+
+.item {
+  text-align: left;
+}
+
+.amount, .price, .total {
+  text-align: center
+}
+
+.product, .amount, .price {
+  color:grey;
+}
+
+.total {
+  color:orange;
+}
+
+.product-image {
+  width: 100px;
+}
+
+.bottom-container a {
+  color:black;
+}
+
+.bottom-container button {
+  background-color: orange;
+  border : none;
+  padding : 15px;
+  border-radius: 10px;
+  font-size : 14px;
+  color:#fff;
+  position: relative;
+  left : 435px;
+  cursor:pointer;
+}
+
+.bottom-container button:hover {
+  background-color: chocolate;
+}
+.bottom-container button:focus {
+  background-color: grey;
+}
+.bottom-container button:active {
+  background-color: brown;
+}
+
+.custom-link {
+  text-decoration: none;
+}
+
+.custom-link:link {
+  color:violet;
+}
+
+.custom-link:visited {
+  color:black;
+}
+
+
+
+

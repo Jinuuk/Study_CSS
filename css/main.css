@@ -1,0 +1,36 @@
+.profile {
+  width:100px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto
+}
+
+.name {
+  font-size:16px; 
+  color:red; 
+  letter-spacing: 1px; 
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+#special {
+  color:red;
+}
+
+/* CSS 적용 우선 순위 : 1.태그 내 style속성 2.id selector 3.class selector 4.tag selector */
+
+.box {
+  width: 200px;
+  margin : 10px;
+  padding : 40px;
+  border-radius: 5px;
+  background : cadetblue;
+  margin-left :auto;
+  margin-right: auto;
+  font-size: 14px; /*일부 스타일은 부모->자식으로 inherit됨*/
+  color : white;
+  box-shadow: 5px 5px 5px black;
+}
