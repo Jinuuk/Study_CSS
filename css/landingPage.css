@@ -256,10 +256,6 @@
   font-size : 14px;
 }
 
-/* * {
-  outline : 1px solid red;
-} */
-
 @media screen and (max-width : 576px){
   .section1__wrapper {
     width: 80%;
