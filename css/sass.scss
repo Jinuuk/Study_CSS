@@ -1,0 +1,93 @@
+//@use 문법
+@use './_reset';
+
+// sass 변수 선언 문법
+$main-color : #2a4cb2;
+$sub-color : #eee;
+$standard-size : 16px;
+
+.background {
+  background-color: $main-color;
+  // sass 사칙연산 문법 (같은 단위만 가능)
+  font-size: ($standard-size + 2px);
+}
+
+.box {
+  color:$sub-color;
+  font-size: ($standard-size - 2px);
+}
+
+//nesting 문법
+// .main-bg h4 {
+//   font-size: $standard-size;
+// }
+// .main-bg button {
+//   color : red;
+// }
+
+.main-bg {
+  width: 100px;
+  h4{
+    font-size: $standard-size;
+  }
+  button {
+    color:red;
+  }
+}
+
+//@extend문법
+//%임시클래스 : 단독으로 컴파일되지 않음
+%btn {
+  width: 100px;
+  height: 100px;
+  padding:20px;
+}
+
+.btn-green {
+  @extend %btn;
+  color:green;
+}
+.btn-red {
+  @extend %btn;
+  color:red;
+}
+.btn-blue {
+  @extend %btn;
+  color:blue;
+}
+
+%box {
+  width: 200px;
+  height: 200px;
+  padding : 20px;
+}
+
+.box-green {
+  @extend %box;
+  color:green;
+}
+.box-red {
+  @extend %box;
+  color:red;
+}
+.box-blue {
+  @extend %box;
+  color:blue;
+}
+
+//@mixin 문법
+@mixin fontStyle($size,$size2,$param){
+  font-size: $size;
+  letter-spacing: $size2;
+  #{ $param } : reset.$main-color;
+}
+ 
+h2 {
+  @include fontStyle(30px,-1px,color)
+}
+h3 {
+  @include fontStyle(20px,-2px,color)
+}
+h4 {
+  @include fontStyle(10px,-3px,color)
+}

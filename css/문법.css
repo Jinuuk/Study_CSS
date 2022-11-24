@@ -1,0 +1,18 @@
+/* css 변수 선언 문법 */
+:root {
+  --main-color : red;
+}
+
+
+.background {
+  background-color: #2a4cb2;
+  color : var(--main-color);
+  font-size: 18px;
+  /* css 사칙연산 문법 */
+  width: calc(40%- 20px);
+}
+
+.box {
+  color: #eee;
+  font-size: 14px;
+}/*# sourceMappingURL=sass.css.map */
