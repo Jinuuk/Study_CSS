@@ -1,0 +1,55 @@
+$active-color : rgb(0, 127, 230);
+$line-color : #eee;
+
+ul{
+  li {
+    list-style: none;
+    border : 1px solid $line-color;
+    width: 500px;
+    padding:20px;
+    font-size: 18px;
+  }
+  li:hover {
+    background-color: $active-color;
+    color: white;
+  }
+}
+
+@mixin boxStyle($bgColor,$fontColor){
+  background-color: $bgColor;
+  color : $fontColor;
+  padding:5px 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  span {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+}
+
+.green-box {
+  @include boxStyle(greenyellow,green);
+}
+
+.blue-box {
+  @include boxStyle(skyblue,blue);
+}
+
+.yellow-box {
+  @include boxStyle(beige,burlywood);
+}
+
+.row {
+  display : flex;
+  .col-6{
+    flex-basis: 50%;
+  }
+
+  .col-4{
+    flex-basis: 33.33%;
+  }
+
+  .col-3{
+    flex-basis: 25%;
+  }
+}

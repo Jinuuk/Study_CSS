@@ -1,0 +1,60 @@
+ul li {
+  list-style: none;
+  border: 1px solid #eee;
+  width: 500px;
+  padding: 20px;
+  font-size: 18px;
+}
+ul li:hover {
+  background-color: rgb(0, 127, 230);
+  color: white;
+}
+
+.green-box {
+  background-color: greenyellow;
+  color: green;
+  padding: 5px 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.green-box span {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.blue-box {
+  background-color: skyblue;
+  color: blue;
+  padding: 5px 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.blue-box span {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.yellow-box {
+  background-color: beige;
+  color: burlywood;
+  padding: 5px 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.yellow-box span {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.row {
+  display: flex;
+}
+.row .col-6 {
+  flex-basis: 50%;
+}
+.row .col-4 {
+  flex-basis: 33.33%;
+}
+.row .col-3 {
+  flex-basis: 25%;
+}/*# sourceMappingURL=sass2.css.map */
