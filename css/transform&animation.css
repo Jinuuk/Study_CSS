@@ -1,0 +1,137 @@
+@charset "UTF-8";
+*{
+  padding:0px;
+  margin:0px;
+}
+
+*{
+  outline : 1px solid green;
+}
+
+.ani-text {
+  margin-top : 100px;
+  /* transform: rotate(10deg); */
+  /* 애니메이션 효과 줄 경우 margin보다 부드러움 */
+  /* transform: translateX(100px); */
+  /* transform: scale(0.5); */
+  text-align: center;
+  
+}
+
+.ani-text:hover {
+  animation-name : leftRight;
+  animation-duration: 1s;
+}
+
+/* 복잡한 애니메이션 정의 */
+@keyframes leftRight {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-100px);
+  }
+  75% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.btn {
+  margin-top : 100px;
+  display: block;
+  margin-left : auto;
+  margin-right: auto;
+  background-color: skyblue;
+  border: none;
+  border-radius: 5px;
+  padding:10px 15px;
+  color: white;
+  font-size: 18px;
+}
+
+.btn:hover {
+  animation-name : shakeBtn;
+  animation-duration: 0.5s;
+}
+
+@keyframes shakeBtn {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.cross {
+  margin-top:100px;
+  text-align: center;
+  font-size: 60px;
+}
+
+.cross:hover {
+  animation-name: rotateCross;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotateCross {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(45deg) scale(1.5);
+  }
+}
+
+.menu-box {
+  background-color: black;
+  width: 150px;
+  height: 100vh;
+  padding-top : 50px;
+  color:white;
+}
+
+.ani-navbar {
+  width: 200px;
+  background-color: black;
+  color: white;
+  height: 100%;
+  padding:25px;
+  position: fixed;
+  z-index: 1;
+  text-align: right;
+  transform: translateX(-150px);
+  transition: all 1s;
+}
+
+.ani-navbar:hover {
+  transform: translateX(0px);
+  text-align: center;
+}
+
+@keyframes slide {
+  0% {transform: translateX(-250px);}
+  50% {transform: translateX(20px) skewX(-30deg);}
+  100% {transform: translateX(0px);}
+}
+
+.ani-navbar:hover p {
+  animation-name : slide;
+  animation-duration: 1s;
+}
