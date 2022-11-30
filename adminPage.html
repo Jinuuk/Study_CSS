@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/adminPage.css">
+  <script src="https://kit.fontawesome.com/038578f405.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <div class="wrap">
+    <div class="sidebar">
+      <div class="sidebar-menu-box">
+        <div class="sidebar-menu">
+          <i class="fa-solid fa-house"></i>
+          <span>Home</span>
+        </div>
+        <div class="sidebar-menu">
+          <i class="fa-solid fa-headphones"></i>
+          <span>Services</span>
+        </div>
+        <div class="sidebar-menu">
+          <i class="fa-solid fa-flag"></i>
+          <span>Alerts</span>
+        </div>
+        <div class="sidebar-menu">
+          <i class="fa-solid fa-chart-pie"></i>
+          <span>Stats</span>
+        </div>
+      </div>
+    </div>
+    <div class="navbar">
+      <div class="input-group serach-box" id="serach-box">
+        <input type="text" class="form-control" id="serach-input" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      <div class="navbar-menu me-4">
+        <span class="me-3"><i class="fa-solid fa-bell"></i></span>
+        <span class="me-3"><i class="fa-solid fa-envelope"></i></span>
+        <span class="navbar-menu-name">Jinuk Kim</span>
+      </div>
+    </div>
+    <div class="main">
+      <section class="section1">
+        <p>Dashboard</p>
+      </section>
+      <section class="section2">
+        <div class="msg">
+          <div class="msg-box box1">
+            <div class="msg-content">
+              <div class="msg-left">
+                <p class="msg-title">Earnings (Monthly)</p>
+                <p class="msg-number">$400,000</p>
+              </div>
+              <div class="msg-icon"><i class="fa-solid fa-calendar"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="msg">
+          <div class="msg-box box2">
+            <div class="msg-content">
+              <div class="msg-left">
+                <p class="msg-title">Earnings (Annual)</p>
+                <p class="msg-number">$800,000</p>
+              </div>
+              <div class="msg-icon"><i class="fa-solid fa-dollar-sign"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="msg">
+          <div class="msg-box box3">
+            <div class="msg-content">
+              <div class="msg-left">
+                <p class="msg-title">Tasks</p>
+                <p class="msg-number">13</p>
+              </div>
+              <div class="msg-icon"><i class="fa-solid fa-list-check"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="msg">
+          <div class="msg-box box4">
+            <div class="msg-content">
+              <div class="msg-left">
+                <p class="msg-title">Request</p>
+                <p class="msg-number">26</p>
+              </div>
+              <div class="msg-icon"><i class="fa-solid fa-comments"></i></div>
+            </div>
+          </div>
+        </div>
+
+
+      </section>
+      <section class="section3">
+        <!-- <canvas id="myChart"></canvas> -->
+      </section>
+    </div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  document.getElementById('serach-input').addEventListener('focus',function(){
+    document.getElementById('serach-box').style.width = '500px';
+  })
+  document.getElementById('serach-input').addEventListener('blur',function(){
+    document.getElementById('serach-box').style.width = '250px';
+  })
+
+  var ctx = document.getElementById('myChart').getContext('2d');
+  var myChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+          labels: ['1월', '2월', '3월', '4월', '5월', '6월'],
+          datasets: [{
+              label: 'Monthly',
+              data: [12, 19, 3, 5, 2, 3],
+              backgroundColor: 'rgb(58, 58, 191)',
+              borderColor: 'rgb(58, 58, 191)',
+              borderWidth: 1
+          }]
+      },
+      options: {
+          scales: {
+              y: {
+                  beginAtZero: true
+              }
+          }
+      }
+  });
+</script>
+</body>
+</html>
